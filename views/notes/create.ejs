@@ -1,0 +1,27 @@
+<h1>Create Note</h1>
+
+<form action="/notes" method="post">
+  <div class="mb-3">
+    <label for="note-title" class="form-label">Title</label>
+    <input
+      type="text"
+      class="form-control"
+      id="note-title"
+      name="title"
+      placeholder="Enter note title"
+      required
+    />
+  </div>
+  <div class="mb-3">
+    <label for="note-content" class="form-label">Content</label>
+    <textarea
+      class="form-control"
+      id="note-content"
+      rows="3"
+      name="content"
+      required
+      placeholder="Enter note content"
+    ></textarea>
+  </div>
+  <input class="btn btn-primary" type="submit" value="Submit" />
+</form>

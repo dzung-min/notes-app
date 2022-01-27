@@ -1,0 +1,17 @@
+<h1>Notes List</h1>
+
+<form action="/notes/new" method="get">
+  <input class="btn btn-primary" type="submit" value="Create" />
+</form>
+
+<br />
+
+<ul class="list-group">
+  <% for (let note of notes) { %>
+  <li class="list-group-item">
+    <a class="text-decoration-none" href="<%= `/notes/${note._id}` %>"
+      ><%= note.title %></a
+    >
+  </li>
+  <% } %>
+</ul>
